@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="box w-75 mx-auto my-5">
+        <div class="form-group">
+            <label for="productName">prouductName :</label>
+            <input class="my-2 form-control" type="text" name="" id="productName">
+            <small class="text-muted">productName must be chars only</small>
+        </div>
+        <div class="form-group">
+            <label for="productPrice">prouductPrice :</label>
+            <input class="my-2 form-control" type="number" name="" id="productPrice">
+            <small class="text-muted">productPrice must be chars only</small>
+        </div>
+        <div class="form-group">
+            <label for="productCatogory">prouductCatogory :</label>
+            <input class="my-2 form-control" type="text"  id="productCatogory">
+            <small class="text-muted">productCatogory must be chars only</small>
+        </div>
+        <div class="form-group">
+            <label for="productDesc">prouductDesc :</label>
+            <textarea class="my-2 form-control" type="text"  id="productDesc"></textarea>
+            <small class="text-muted">productDesc must be chars only</small>
+        </div>
+        <button onclick="addProduct()" class="my-3 btn btn-outline-info">add product</button>
+    </div>
+    <div class="w-75 mx-auto my-2">
+        <label for="">search by productName</label>
+        <input class="form-control my-2" onkeyup ="searchProduct(this.value)" type="text">
+    </div>
+    <div class="w-75 mx-auto my-5">
+        <table class="table">
+            <thead>
+                <th>Index</th>
+                <th>productName</th>
+                <th>productPrice</th>
+                <th>category</th>
+                <th>Description</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="tableBody">
+                
+            </tbody>
+        </table>
+
+    </div>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
